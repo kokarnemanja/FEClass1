@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>koliko ste zadovoljni balonom?</title>
+		<style>
+		body {  }
+		.background { background-image: url("https://fieldturf.com/image/1/997/0/uploads/articles/edmontonsoccerdome1-en-1540395247.jpg");
+			background-color:#006400;
+			background-size: cover;
+			background-blend-mode: multiply;
+			top: 0;
+  			left: 0;
+  			bottom: 0;
+  			right: 0;
+			padding-bottom: 100px;
+  			position: absolute;
+			overflow-y:scroll;
+    			overflow-x:hidden;
+  			}
+		.centerbox { 
+			margin: auto;
+  			width: 30%;
+  			border: 2px solid white;
+  			padding: 50px;
+			background: rgba(0,0,0, 0.5);
+			}
+		h1.title { font-family:gobold; color: white; text-align:center;}
+		p.description { font-family:Verdana; color: white; text-align:center;}
+		form { text-align: left; }
+		input {  font-size:16px; margin-bottom: 10px;}
+		input[type=text] { width: 100%; }
+		label { font-family:Verdana; color: white;}
+		.radiofrequency { display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;}
+		.checkbox { display: block; margin-left: auto; margin-right: auto;margin-bottom: 10px;}
+		input[type=submit] { display: block; margin-left: auto; margin-right: auto; width:75%; background-color: #90EE90; border:none; height: 50px; color: black; font-family:impact;}
+		</style>
+		
+		
+	</head>
+
+	<body>
+	<div class="background">
+		
+		<h1 class="title"> koliko ste zadovoljni balonom? </h1>
+		<p class="description"> Zanima nas Vaše mišljenje o našem balonu </p>
+			<div class="centerbox">
+			<form id="survey-form">
+				<label for="name">Ime</label><br>
+  					<input type="text" id="name" name="name" placeholder="Unesite Vaše Ime"><br>
+  				<label for="email">Email Adresa</label><br>
+  					<input type="text" id="email" email="email" placeholder="Unesite Vašu Email Adresu" pattern="[a-zA-Z0-9._]+@[a-zA-Z0-9]+.+[a-zA-Z0-9]" ><br>
+				<label for="years">Koliko imate godina? (min16+)</label><br>
+  					<input type="number" id="years" years="years" min="16" placeholder="Unesite Vaše Godine">><br>
+				<label for="Sport">Koji sport ste igrali u našem balonu?</label><br>
+  					<select id="dropdown" sport="sport" style="font-size:16px; margin-bottom: 10px;">
+						<option value="Mali Fudbal"> Mali Fudbal </option>
+						<option value="Veliki Fudbal"> Veliki Fudbal </option>
+						<option value="Tenis"> Tenis </option>
+					</select><br>
+				<label for="frequency">Koliko često igrate u našem balonu?</label><br>
+					<div class="radiofrequency">
+						<input type="radio" id="1-2" name="frequency" value="1-2 mesecno">
+						<label for="1-2">1-2 puta mesečno</label><br>
+						<input type="radio" id="3-5" name="frequency" value="3-5 mesecno">
+						<label for="3-5">3-5 puta mesečno</label><br>
+						<input type="radio" id="5+" name="frequency" value="5+ mesecno">
+						<label for="5+">Više od 5 puta mesečno</label><br>
+					</div>
+				<label for="satisfied">Čime ste zadovoljni u našem balonu?</label><br>
+					<div class="checkbox">
+						<input type="checkbox" id="teren" name="teren" value="teren">
+						<label for="teren"> Teren</label><br>
+						<input type="checkbox" id="svlacionice" name="svlacionice" value="svlacionice">
+						<label for="svlacionice"> Svlačionice</label><br>
+						<input type="checkbox" id="lopte" name="lopte" value="lopte">
+						<label for="lopte"> Lopte</label><br>
+						<input type="checkbox" id="kafic" name="kafic" value="kafic">
+						<label for="kafic"> Kafić</label><br>
+					</div>
+				<label for="dissatisfied">Čime ste nezadovoljni u našem balonu?</label><br>
+					<div class="checkbox">
+						<input type="checkbox" id="teren" name="teren" value="teren">
+						<label for="teren"> Teren</label><br>
+						<input type="checkbox" id="svlacionice" name="svlacionice" value="svlacionice">
+						<label for="svlacionice"> Svlačionice</label><br>
+						<input type="checkbox" id="lopte" name="lopte" value="lopte">
+						<label for="lopte"> Lopte</label><br>
+						<input type="checkbox" id="kafic" name="kafic" value="kafic">
+						<label for="kafic"> Kafić</label><br>
+					</div>
+				<label for="utisci">Vaši utisci i komentari:</label><br>
+						<textarea id="comments" name="comments" rows="10" style="width:100%; margin-bottom:10px;"></textarea><br>
+				<input type="submit" value="POTVRDI">
+			</form>
+			</div>
+	</div>
+	</body>
+
+
+</html>
